@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Balloon from '../src/components/atoms/Balloon';
+import testImg from './mock/images/img01.jpg'
+import Img from '../src/components/atoms/Img';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Balloon>OK</Balloon>
+      <Img src={testImg} width='128' style={{display: 'block', height: '100px', backgroundColor: 'red'}}/>
     </div>
   );
 }
